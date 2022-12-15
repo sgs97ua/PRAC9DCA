@@ -1,0 +1,5 @@
+herramientas gráficas
+
+gource-->no solo funciona con git funciona con otras.
+
+git gui-->suele venir instalado cuando uno instala git y teóricamente.
