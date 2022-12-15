@@ -9,5 +9,12 @@ int main(){
     cout << "Encuentro" << endl;
     cout << "Muy" << endl;
     cout << "Bien" << endl;
+    for(int i = 0; i<10 ; i++){
+        cout << i
+    }
+
+    cout << "Bueno" << endl;
+    cout<< "Nos"<< endl;
+    cout << "Vemos" << endl;
     return 0;
 }
