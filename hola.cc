@@ -17,6 +17,8 @@ int main(){
     cout<< "Nos"<< endl;
     cout << "Vemos" << endl;
     cout << "En" << endl;
-    cout << "Un"
+    cout << "Un" << endl;
+    cout << "Futuro" << endl;
+    cout << "Adios"<< endl;
     return 0;
 }
