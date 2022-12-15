@@ -29,3 +29,29 @@ git push
 git config --local alias.st status--> Lo configuramos de forma local
 git st --> Ejecuta el comando gitstatus
 git config --global alias.st status --> Configuración global
+
+
+3ª Pregunta.
+
+Con el git bisect lo que hacemos es iniciar un proceso de búsqueda desde el primer commit al último commit.
+En el se van acotando los commits hasta que se encuentra el commit erróneo. 
+
+git bisect start
+git log
+git bisect good 956dd77fd5d498fe09a3f2d95e1625a87ab09260
+git log
+git bisect bad d0e09faeb043e31227244f68b12ce56ddb4fbbde
+git bisect good 490052fc143fd652d0543f6e9ccfc851339a4fac
+git bisect bad b2337acfaec2492d6c225157c9db93436582e45f
+git bisect good 1c3ba2bbd54a6d3f9c67a3f6107a665f21ddc504
+git revert b2337acfaec2492d6c225157c9db93436582e45
+git bisect reset --Hemos encontrado el ERROR
+
+El error se encontraba en el commit
+b2337acfaec2492d6c225157c9db93436582e45
+
+Para soluicionarlo hemos utilizado el comando git revert.
+git revert d0e09faeb043e31227244f68b12ce56ddb4fbbde
+git log
+git revert d0e09faeb043e31227244f68b12ce56ddb4fbbde
+git push
