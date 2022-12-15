@@ -55,3 +55,17 @@ git revert d0e09faeb043e31227244f68b12ce56ddb4fbbde
 git log
 git revert d0e09faeb043e31227244f68b12ce56ddb4fbbde
 git push
+
+
+4º Pregunta 
+
+Un hook es un script que se ejcuta autmáticamente cada ve que se realiza una
+acción específica en un repositorio Git.
+
+
+Para hacer uso de algún hook de git hemos tenido que ir a .git/hooks y 
+en mi caso he utilizado el commit-msg.sample. Este archivo
+contiene una muestra del formato que se espera que sigan los mensajes de commit
+del repositorio.
+
+commit-msg muestra los archivos que se van a commitear en el repositorio.
