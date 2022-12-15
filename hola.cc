@@ -7,5 +7,7 @@ int main(){
     cout << "Yo" << endl;
     cout << "Me" << endl;
     cout << "Encuentro" << endl;
-    
+    cout << "Muy" << endl;
+    cout << "Bien" << endl;
+    return 0;
 }
