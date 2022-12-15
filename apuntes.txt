@@ -3,3 +3,29 @@ herramientas gráficas
 gource-->no solo funciona con git funciona con otras.
 
 git gui-->suele venir instalado cuando uno instala git y teóricamente.
+
+
+Comandos que se ejecutan.
+1ª Pregunta
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/sgs97ua/PRAC9DCA.git
+git push -u origin main
+AQUÍ ME DA ERROR POR NO HABER AGREGADO EL FICHERO
+git add apuntes.txt 
+git commit -m "First commit"
+git branch -a
+git remote add origin https://github.com/sgs97ua/PRAC9DCA.git
+git push -u origin main
+git config --global user.name "sgs97ua"
+git config --global user.email "sgs97@alu.ua.es"
+git pull origin main
+git pull
+git push
+
+2ª Pregunta.
+git config --local alias.st status--> Lo configuramos de forma local
+git st --> Ejecuta el comando gitstatus
+git config --global alias.st status --> Configuración global
