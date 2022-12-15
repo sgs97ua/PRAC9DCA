@@ -80,9 +80,11 @@ acción específica en un repositorio Git.
 
 Para hacer uso de algún hook de git hemos tenido que ir a .git/hooks y
 en mi caso he utilizado el pre-commit. Lo que hace es comprobar
-el nuevo documento creado tenga carácteres ASCII.
+si los cambios nuevo documento creado tenga carácteres ASCII o si hay un espacio en blanco antes de un salto de línea.
 
 Lo que hemos hecho ha sido quitar la extensión .sample.
+
+Al crear un documento con nombre sin carácteres ASCII no hace el commit.
 ``` bash
 Error: Attempt to add a non-ASCII file name.
 
@@ -94,4 +96,21 @@ If you know what you are doing you can disable this check using:
 
   git config hooks.allownonascii true
 ```
-commit-msg muestra los archivos que se van a commitear en el repositorio.
+Lo mismo ocurre si en un fichero hay un espacio delante de un espacio en blanco.
+
+``` bash
+README.md:20: trailing whitespace.
++git add apuntes.txt
+README.md:49: trailing whitespace.
++En ese proceso se van acotando los commits hasta que se encuentra el commit erróneo.
+README.md:81: trailing whitespace.
++Para hacer uso de algún hook de git hemos tenido que ir a .git/hooks y
+README.md:82: trailing whitespace.
++en mi caso he utilizado el pre-commit. Lo que hace es comprobar
+README.md:83: trailing whitespace.
++el nuevo documento creado tenga carácteres ASCII.
+apuntes.txt:67: trailing whitespace.
++en mi caso he utilizado el pre-commit. Lo que hace es comprobar
+apuntes.txt:68: trailing whitespace.
++el nuevo documento creado tenga carácteres ASCII.
+```
