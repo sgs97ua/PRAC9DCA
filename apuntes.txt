@@ -68,4 +68,6 @@ en mi caso he utilizado el commit-msg.sample. Este archivo
 contiene una muestra del formato que se espera que sigan los mensajes de commit
 del repositorio.
 
+Lo que hemos hecho ha sido quitar la extensión .sample
+
 commit-msg muestra los archivos que se van a commitear en el repositorio.
