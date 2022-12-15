@@ -64,10 +64,10 @@ acción específica en un repositorio Git.
 
 
 Para hacer uso de algún hook de git hemos tenido que ir a .git/hooks y 
-en mi caso he utilizado el commit-msg.sample. Este archivo
+en mi caso he utilizado el pre-push.sample. Este archivo
 contiene una muestra del formato que se espera que sigan los mensajes de commit
 del repositorio.
 
-Lo que hemos hecho ha sido quitar la extensión .sample
+Lo que hemos hecho ha sido quitar la extensión .sample.
 
 commit-msg muestra los archivos que se van a commitear en el repositorio.
