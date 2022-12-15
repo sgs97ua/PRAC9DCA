@@ -10,15 +10,13 @@ int main(){
     cout << "Muy" << endl;
     cout << "Bien" << endl;
     for(int i = 0; i<10 ; i++){
-        cout << i
+        cout << i;
     }
 
     cout << "Bueno" << endl;
     cout<< "Nos"<< endl;
     cout << "Vemos" << endl;
     cout << "En" << endl;
-    cout << "Un" << endl;
-    cout << "Futuro" << endl;
-    cout << "Adios"<< endl;
+    cout << "Un"
     return 0;
 }
